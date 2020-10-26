@@ -1,0 +1,4 @@
+dependencies {
+    compile project(':zheng-common')
+    compile project(':zheng-demo:zheng-demo-rpc-api')
+}

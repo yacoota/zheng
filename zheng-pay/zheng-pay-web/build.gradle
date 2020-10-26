@@ -1,0 +1,5 @@
+dependencies {
+    compile project(':zheng-pay:zheng-pay-rpc-api')
+
+    implementation files('src/main/webapp/WEB-INF/lib/alipay-sdk-java20170829142630.jar')
+}

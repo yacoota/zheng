@@ -1,0 +1,8 @@
+dependencies {
+    compile project(':zheng-oss:zheng-oss-sdk')
+
+    implementation "com.qiniu:qiniu-java-sdk:[7.0.0, 7.1.99]"
+    implementation "com.aliyun.oss:aliyun-sdk-oss:2.5.0"
+    implementation "javax.servlet:servlet-api:2.5"
+    implementation "javax.servlet:jstl:1.2"
+}

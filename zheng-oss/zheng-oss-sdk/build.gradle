@@ -1,0 +1,6 @@
+dependencies {
+    compile project(':zheng-common')
+
+    implementation "com.qiniu:qiniu-java-sdk:[7.0.0, 7.1.99]"
+    implementation "com.aliyun.oss:aliyun-sdk-oss:2.5.0"
+}

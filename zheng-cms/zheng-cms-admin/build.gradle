@@ -1,0 +1,8 @@
+dependencies {
+    compile project(':zheng-admin')
+    compile project(':zheng-cms:zheng-cms-rpc-api')
+    compile project(':zheng-upms:zheng-upms-client')
+
+    implementation "javax.servlet:servlet-api:2.5"
+    implementation "javax.servlet:jstl:1.2"
+}

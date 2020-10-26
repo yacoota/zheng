@@ -1,0 +1,8 @@
+dependencies {
+    compile project(':zheng-upms:zheng-upms-rpc-api')
+
+    testCompile "org.springframework.boot:spring-boot-starter-test"
+
+
+    implementation("junit:junit:4.13.1")
+}

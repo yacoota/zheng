@@ -1,0 +1,8 @@
+dependencies {
+    compile project(':zheng-cms:zheng-cms-common')
+    compile project(':zheng-cms:zheng-cms-dao')
+    compile project(':zheng-cms:zheng-cms-rpc-api')
+
+    implementation "com.alibaba.rocketmq:rocketmq-client:3.6.2.Final"
+    implementation files('src/main/webapp/WEB-INF/lib/tbschedule-3.2.8-SNAPSHOT.jar')
+}

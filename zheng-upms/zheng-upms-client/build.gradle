@@ -1,0 +1,4 @@
+dependencies {
+    compile project(':zheng-common')
+    compile project(':zheng-upms:zheng-upms-rpc-api')
+}

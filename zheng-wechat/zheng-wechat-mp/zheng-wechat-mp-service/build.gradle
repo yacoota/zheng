@@ -1,0 +1,3 @@
+dependencies {
+    compile project(':zheng-wechat:zheng-wechat-mp:zheng-wechat-mp-dao')
+}
