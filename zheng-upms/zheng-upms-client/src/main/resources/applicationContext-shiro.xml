@@ -9,6 +9,15 @@
 
     <context:property-placeholder location="classpath*:zheng-upms-client.properties"/>
 
+<!--    <bean id="propertyConfigurer" class="com.zheng.common.plugin.EncryptPropertyPlaceholderConfigurer">-->
+<!--        <property name="locations">-->
+<!--            <list>-->
+<!--                <value>classpath:profiles/dev.properties</value>-->
+<!--                <value>classpath:zheng-upms-client.properties</value>-->
+<!--            </list>-->
+<!--        </property>-->
+<!--    </bean>-->
+
     <!-- Shiro的Web过滤器 -->
     <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
         <property name="securityManager" ref="securityManager"/>
@@ -20,9 +29,10 @@
                 <entry key="authc" value-ref="upmsAuthenticationFilter"/>
             </util:map>
         </property>
+
         <property name="filterChainDefinitions">
             <value>
-                /manage/** = upmsSessionForceLogout,authc
+                /manage/** = authc
                 /manage/index = user
                 /druid/** = user
                 /swagger-ui.html = user
@@ -36,7 +46,7 @@
     <bean id="upmsAuthenticationFilter" class="com.zheng.upms.client.shiro.filter.UpmsAuthenticationFilter"/>
 
     <!-- 强制退出会话过滤器 -->
-    <bean id="upmsSessionForceLogout" class="com.zheng.upms.client.shiro.filter.UpmsSessionForceLogoutFilter"/>
+<!--    <bean id="upmsSessionForceLogout" class="com.zheng.upms.client.shiro.filter.UpmsSessionForceLogoutFilter"/>-->
 
     <!-- 安全管理器 -->
     <bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">

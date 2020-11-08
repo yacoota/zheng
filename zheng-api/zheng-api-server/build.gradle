@@ -1,8 +1,10 @@
 dependencies {
-    compile project(':zheng-admin')
     compile project(':zheng-api:zheng-api-rpc-api')
-    compile project(':zheng-upms:zheng-upms-client')
+    // compile project(':zheng-upms:zheng-upms-client')
 
-    implementation "javax.servlet:servlet-api:2.5"
-    implementation "javax.servlet:jstl:1.2"
+    implementation "org.springframework.boot:spring-boot-starter-web"
+    implementation "org.springframework.boot:spring-boot-starter-activemq"
+
+//    implementation "javax.servlet:servlet-api:2.5"
+//    implementation "javax.servlet:jstl:1.2"
 }

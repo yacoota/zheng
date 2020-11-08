@@ -1,7 +1,7 @@
 dependencies {
-    compile project(':zheng-admin')
     compile project(':zheng-pay:zheng-pay-rpc-api')
 
-    implementation "javax.servlet:servlet-api:2.5"
-    implementation "javax.servlet:jstl:1.2"
+
+    implementation "org.springframework.boot:spring-boot-starter-web"
+    // implementation "org.springframework.boot:spring-boot-starter-thymeleaf"
 }

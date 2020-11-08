@@ -20,6 +20,7 @@
     <bean id="propertyConfigurer" class="com.zheng.common.plugin.EncryptPropertyPlaceholderConfigurer">
         <property name="locations">
             <list>
+                <value>classpath:profiles/${spring.profiles.active}.properties</value>
                 <value>classpath:jdbc.properties</value>
                 <value>classpath:redis.properties</value>
             </list>
@@ -80,7 +81,7 @@
     </bean>
 
     <!-- 动态数据源 -->
-    <bean id="dataSource" class="com.zheng.common.db.DynamicDataSource">
+    <bean id="dataSource" class="com.zheng.common.db.DynamicDataSource" primary="true">
         <property name="targetDataSources">
             <map key-type="java.lang.String">
                 <!-- 可配置多个数据源 -->

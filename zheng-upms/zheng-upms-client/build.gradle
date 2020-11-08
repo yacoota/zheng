@@ -1,4 +1,17 @@
 dependencies {
     compile project(':zheng-common')
     compile project(':zheng-upms:zheng-upms-rpc-api')
+
+    implementation "org.springframework.boot:spring-boot-starter-web"
+    implementation "org.springframework.boot:spring-boot-starter-data-redis"
+
+    implementation "org.apache.shiro:shiro-spring:${shiro_version}"
+
+//    implementation "org.apache.shiro:shiro-core:${shiro_version}"
+//    implementation "org.apache.shiro:shiro-web:${shiro_version}"
+//    implementation "org.apache.shiro:shiro-quartz:${shiro_version}"
+
+    implementation "org.springframework.boot:spring-boot-starter-security"
+    // implementation "org.springframework.security:spring-security-web:${spring_security_version}"
+    // implementation "org.springframework.security:spring-security-config:${spring_security_version}"
 }

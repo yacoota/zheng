@@ -1,3 +1,9 @@
 dependencies {
     compile project(':zheng-ucenter:zheng-ucenter-rpc-api')
+
+    implementation "mysql:mysql-connector-java:5.1.47"
+    implementation "org.springframework.boot:spring-boot-starter-jdbc"
+    implementation("net.sf.ehcache:ehcache:${ehcache_version}") {
+        exclude group: "net.sf.ehcache", module: "ehcache-core"
+    }
 }

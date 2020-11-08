@@ -1,4 +1,17 @@
 dependencies {
     compile project(':zheng-upms:zheng-upms-client')
     compile project(':zheng-upms:zheng-upms-rpc-api')
+
+    implementation "org.springframework.boot:spring-boot-starter-web"
+
+    implementation "org.springframework.boot:spring-boot-starter-thymeleaf"
+    // implementation "org.thymeleaf:thymeleaf-spring4:${thymeleaf_version}"
+
+    implementation "org.apache.shiro:shiro-core:${shiro_version}"
+
+    implementation "com.baidu.unbiz:fluent-validator:1.0.6"
+
+    // implementation "org.springframework.session:spring-session-data-redis"
+    // implementation "org.springframework.session:spring-session-data-redis:1.3.0.RELEASE"
+
 }

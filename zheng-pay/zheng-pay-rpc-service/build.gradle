@@ -1,3 +1,6 @@
 dependencies {
     compile project(':zheng-pay:zheng-pay-rpc-api')
-}
+
+    implementation "mysql:mysql-connector-java:5.1.47"
+    implementation "org.springframework.boot:spring-boot-starter-jdbc"
+             }

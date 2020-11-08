@@ -1,3 +1,5 @@
 dependencies {
     compile project(':zheng-upms:zheng-upms-common')
+
+    implementation "org.mybatis.spring.boot:mybatis-spring-boot-starter:${mybatis_spring_version}"
 }

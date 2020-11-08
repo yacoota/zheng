@@ -1,3 +1,30 @@
 dependencies {
+    // implementation "org.springframework.boot:spring-boot-starter-web"
+
+    implementation "javax.servlet:servlet-api:2.5"
+
+    implementation "org.springframework.boot:spring-boot-starter-jdbc"
+    implementation "org.springframework.boot:spring-boot-starter-mail"
+    implementation "org.springframework.boot:spring-boot-starter-activemq"
+
+    // implementation "org.apache.activemq:activemq-core:5.7.0"
+    implementation "org.springframework.boot:spring-boot-starter-data-redis"
+    // implementation "redis.clients:jedis:2.9.0"
+    // implementation "org.springframework.data:spring-data-redis:1.7.5.RELEASE"
+
+    // implementation "org.hibernate:hibernate-validator:5.2.2.Final"
+    implementation "com.baidu.unbiz:fluent-validator:1.0.6"
+
+    implementation "org.apache.shiro:shiro-spring:${shiro_version}"
+
+    implementation "com.alibaba:druid:1.0.14"
+    implementation "org.mybatis.spring.boot:mybatis-spring-boot-starter:${mybatis_spring_version}"
+    // implementation "org.mybatis:mybatis:${mybatis_version}"
+    // implementation "org.mybatis:mybatis-spring:${mybatis_spring_version}"
+    // implementation "org.mybatis:mybatis-ehcache:${mybatis_ehcache_version}"
+    implementation "org.mybatis.caches:mybatis-ehcache:${mybatis_ehcache_version}"
+
+    implementation "org.mybatis.generator:mybatis-generator-core:${mybatis_generator_version}"
+    implementation "com.github.pagehelper:pagehelper:${mybatis_pagehelper_version}"
 
 }

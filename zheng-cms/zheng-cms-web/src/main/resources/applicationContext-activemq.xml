@@ -7,7 +7,8 @@
 
     <!-- 连接工厂 -->
     <bean id="activeMqConnectionFactory" class="org.apache.activemq.ActiveMQConnectionFactory">
-        <property name="brokerURL" value="${AvtiveMQ.brokerURL}"/>
+        <!--        <property name="brokerURL" value="${AvtiveMQ.brokerURL}"/>-->
+        <property name="brokerURL" value="failover:(tcp://${mqserver:127.0.0.1}:61616?wireFormat.maxInactivityDuration=0)"/>
         <property name="useAsyncSend" value="true"/>
     </bean>
     <bean id="connectionFactory" class="org.springframework.jms.connection.CachingConnectionFactory">

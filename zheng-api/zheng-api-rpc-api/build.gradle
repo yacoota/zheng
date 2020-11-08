@@ -1,5 +1,5 @@
 dependencies {
     compile project(':zheng-api:zheng-api-common')
-    compile project(':zheng-upms:zheng-upms-rpc-api')
-    compile project(':zheng-cms:zheng-cms-rpc-api')
+    // compile project(':zheng-upms:zheng-upms-rpc-api')
+    // compile project(':zheng-cms:zheng-cms-rpc-api')
 }

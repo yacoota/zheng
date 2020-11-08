@@ -1,8 +1,14 @@
 dependencies {
-    compile project(':zheng-admin')
     compile project(':zheng-cms:zheng-cms-rpc-api')
     compile project(':zheng-upms:zheng-upms-client')
 
-    implementation "javax.servlet:servlet-api:2.5"
-    implementation "javax.servlet:jstl:1.2"
+    implementation "org.springframework.boot:spring-boot-starter-web"
+    implementation "org.springframework.boot:spring-boot-starter-activemq"
+
+    implementation "org.apache.shiro:shiro-core:${shiro_version}"
+
+    implementation "com.baidu.unbiz:fluent-validator:1.0.6"
+
+    // implementation "javax.servlet:servlet-api:2.5"
+    // implementation "javax.servlet:jstl:1.2"
 }

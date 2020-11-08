@@ -1,8 +1,10 @@
 dependencies {
     compile project(':zheng-upms:zheng-upms-rpc-api')
 
-    testCompile "org.springframework.boot:spring-boot-starter-test"
-
-
-    implementation("junit:junit:4.13.1")
+    implementation "mysql:mysql-connector-java:5.1.47"
+    implementation "org.springframework.boot:spring-boot-starter-jdbc"
+    implementation("net.sf.ehcache:ehcache:${ehcache_version}") {
+        exclude group: "net.sf.ehcache", module: "ehcache-core"
+    }
+    // implementation("net.sf.ehcache:ehcache-core:2.6.11")
 }

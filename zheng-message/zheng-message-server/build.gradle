@@ -1,8 +1,9 @@
 dependencies {
     compile project(':zheng-common')
 
-    implementation "javax.servlet:servlet-api:2.5"
-    implementation "javax.servlet:jstl:1.2"
-    implementation fileTree('lib')
+    implementation "org.springframework.boot:spring-boot-starter-web"
+    implementation "org.springframework.boot:spring-boot-starter-thymeleaf"
+
+    // implementation fileTree('lib')
     implementation files('lib/netty-socketio-1.7.12.zheng.jar')
 }

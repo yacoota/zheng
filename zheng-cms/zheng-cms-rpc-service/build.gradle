@@ -1,3 +1,8 @@
 dependencies {
     compile project(':zheng-cms:zheng-cms-rpc-api')
+
+    implementation "mysql:mysql-connector-java:8.0.22"
+    implementation "org.springframework.boot:spring-boot-starter-jdbc"
+    implementation "org.mybatis.spring.boot:mybatis-spring-boot-starter:${mybatis_spring_version}"
+
 }
