@@ -4,7 +4,6 @@ dependencies {
     compile project(':zheng-cms:zheng-cms-rpc-api')
 
     implementation "org.springframework.boot:spring-boot-starter-web"
-    implementation "org.springframework.boot:spring-boot-starter-task"
     implementation "org.springframework.boot:spring-boot-starter-activemq"
     implementation "org.apache.shiro:shiro-core:${shiro_version}"
 
